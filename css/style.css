@@ -17,6 +17,7 @@ header {
   top:0;
 }
 h1#logo {
+  display: inline;
   font-family: 'Wire One', sans-serif;
   color: white;
   right: 18px;
@@ -26,14 +27,16 @@ h1#logo {
   text-align: left;
   display: table-cell;
   width: 50%;
+  height: 52px;
   vertical-align: bottom;
-  height: 50px;
   text-align: left;
   padding-right: 50%;
+  overflow: hidden;
   /*position:relative;*/
   }
 
 nav {
+    display: inline;
     font-family: 'Wire One', sans-serif;
     color: white;
     text-align: right;
@@ -42,7 +45,9 @@ nav {
     height: 50px;
     text-align: right;
     width: 50%;
+    height: 50%;
     position: relative;
+    overflow: hidden;
 }
 
 body{
