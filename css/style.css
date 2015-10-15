@@ -6,6 +6,13 @@ header {
   display: block;
   }
 
+footer {
+  position: fixed;
+  background-color: black;
+  display: block;
+  bottom: 0%;
+  width: 100%;
+}
 /*#top-banner {
   position: fixed;
   width: 100%;
@@ -17,9 +24,11 @@ header {
 #top-banner {
   top:0;
 }
+
 #logo {
   font-family: 'Wire One', sans-serif;
   color: white;
+  font-size: 3em;
   width: 50%;
   display: inline;
   text-align: right;
@@ -29,6 +38,7 @@ header {
 
 #nav {
   font-family: 'Wire One', sans-serif;
+  font-size: 1.5em;
   color: white;
   text-align: right;
   padding-top: 2%;
@@ -45,22 +55,65 @@ header {
   width: 50%;
   height: 50%;
   position: relative;
-  overflow: hidden;*/
+  overflow: hidden;*/ 
+}
+
+.navbar {
+  background-image: linear-gradient(top, #7d7e7d 0%, #454645 50%, #0e0e0e 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #7d7e7d), color-stop(0.5, #454645), color-stop(1, #0e0e0e));
+  background-image: -moz-linear-gradient(top, #7d7e7d 0%, #454645 50%, #0e0e0e 100%);
+  background-image: -o-linear-gradient(top, #7d7e7d 0%, #454645 50%, #0e0e0e 100%);
+  background-image: -ms-linear-gradient(top, #7d7e7d 0%, #454645 50%, #0e0e0e 100%);
+  font-family: 'Wire One', sans-serif;
+  font-size: 1.5em;
+}
+
+.navbar-brand {
+  
 }
 
 /*////body////*/
 
 body{
-  background-color: gray;
-
+  background-image: linear-gradient(top, #bfbfbf 0%, #dfdfdf 52%, #ffffff 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bfbfbf), color-stop(0.523, #dfdfdf), color-stop(1, #ffffff));
+  background-image: -moz-linear-gradient(top, #bfbfbf 0%, #dfdfdf 52%, #ffffff 100%);
+  background-image: -o-linear-gradient(top, #bfbfbf 0%, #dfdfdf 52%, #ffffff 100%);
+  background-image: -ms-linear-gradient(top, #bfbfbf 0%, #dfdfdf 52%, #ffffff 100%);  
 }
 
 p {
-  padding-top: 50px;
+  display: block;
   font-family: 'Wire One', sans-serif;
-  color: white;
-  position:relative;
+  font-size: 1em;
+  color: #383c3c;
+  position: relative;
+  text-align: center;
 }
+
+p>.fa {
+  text-align: center;
+}
+
+.colborder {
+  width: 2px;
+  color: black;
+}
+         
+.footertext {
+  font-family: 'Wire One', sans-serif;
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  }
+
+h3 {  
+  font-family: 'Wire One', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: #383c3c;
+}
+
 
 /*////column structure////*/
 * {
@@ -84,7 +137,7 @@ p {
   visibility: hidden;
   height: 0;
   line-height: 0;
-  margin-bottom: 2%;
+  margin-bottom: 0;
 }
 
 [class*="col-"] {
@@ -97,7 +150,7 @@ p {
 }
 
 .col-2 {
-  width: 50%;
+  width: 49%;
 }
 
 .col-6 {
