@@ -6,11 +6,11 @@ header {
   display: block;
   }
 
-footer {
+#footer {
   position: fixed;
   background-color: black;
   display: block;
-  bottom: 0%;
+  bottom: 0;
   width: 100%;
 }
 /*#top-banner {
@@ -23,6 +23,7 @@ footer {
 
 #top-banner {
   top:0;
+  position: fixed;
 }
 
 #logo {
@@ -34,6 +35,7 @@ footer {
   text-align: right;
   min-width: 300px;
   max-width:1400px;
+  padding-left: 5px;
   }
 
 #nav {
@@ -42,22 +44,27 @@ footer {
   color: white;
   text-align: right;
   padding-top: 2%;
-
-  /*float: right;
-  display: table-cell;
-  margin: 0 0 0 50px;
-  font-family: 'Wire One', sans-serif;
-  color: white;
-  text-align: right;
-  vertical-align: bottom;
-  height: 50px;
-  text-align: right;
-  width: 50%;
-  height: 50%;
-  position: relative;
-  overflow: hidden;*/ 
 }
 
+#nav a:link{
+  color:white;
+  text-decoration: none;
+}
+
+#nav a:visited{
+  color:white;
+  text-decoration: none;
+}
+
+#nav a:active{
+  color:red;
+  text-decoration: none;
+}
+
+#nav a:hover{
+  color:gray;
+  text-decoration: none;
+}
 .navbar {
   background-image: linear-gradient(top, #7d7e7d 0%, #454645 50%, #0e0e0e 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #7d7e7d), color-stop(0.5, #454645), color-stop(1, #0e0e0e));
@@ -69,7 +76,8 @@ footer {
 }
 
 .navbar-brand {
-  
+  font-family: 'Wire One', sans-serif;
+  font-size: 2em;
 }
 
 /*////body////*/
@@ -79,25 +87,32 @@ body{
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bfbfbf), color-stop(0.523, #dfdfdf), color-stop(1, #ffffff));
   background-image: -moz-linear-gradient(top, #bfbfbf 0%, #dfdfdf 52%, #ffffff 100%);
   background-image: -o-linear-gradient(top, #bfbfbf 0%, #dfdfdf 52%, #ffffff 100%);
-  background-image: -ms-linear-gradient(top, #bfbfbf 0%, #dfdfdf 52%, #ffffff 100%);  
+  background-image: -ms-linear-gradient(top, #bfbfbf 0%, #dfdfdf 52%, #ffffff 100%);
+  overflow: scroll;  
 }
 
+
 p {
-  display: block;
+  /*display: block;*/
   font-family: 'Wire One', sans-serif;
-  font-size: 1em;
-  color: #383c3c;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: rgb(43, 43, 43);  
   position: relative;
   text-align: center;
+  margin-left: 1%;
 }
 
 p>.fa {
   text-align: center;
+  font-size: 10em;
 }
 
 .colborder {
-  width: 2px;
+  border-right-style: dotted;
+  border-width: 1px;
   color: black;
+  float: right;
 }
          
 .footertext {
@@ -111,9 +126,45 @@ h3 {
   font-family: 'Wire One', sans-serif;
   font-size: 1.5em;
   text-align: center;
-  color: #383c3c;
+  color: rgb(43, 43, 43);
+  margin-right: 5%;
+}
+h4 {  
+  font-family: 'Wire One', sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  color: rgb(43, 43, 43);
+  margin-right: 5%;
 }
 
+h5 {  
+  font-family: 'Wire One', sans-serif;
+  font-size: 1.1em;
+  text-align: left;
+  color: white;
+  padding: 14px 2px;
+  margin: 0;
+}
+
+h3,h4 a:link{
+  color:rgb(43, 43, 43);
+  text-decoration: none;
+}
+
+h3,h4 a:visited{
+  color:rgb(43, 43, 43);
+  text-decoration: none;
+}
+
+h3,h4 a:active{
+  color:red;
+  text-decoration: none;
+}
+
+h3,h4 a:hover{
+  color:gray;
+  text-decoration: none;
+}
 
 /*////column structure////*/
 * {
@@ -138,6 +189,7 @@ h3 {
   height: 0;
   line-height: 0;
   margin-bottom: 0;
+  text-align: center;
 }
 
 [class*="col-"] {
@@ -146,13 +198,25 @@ h3 {
 }
 
 [class*="col-"]:first-child {
-  margin-left: 0;
+  margin-left: 3%;
+}
+
+.col-1 {
+  width: 100%;
 }
 
 .col-2 {
-  width: 49%;
+  width: 47%;
 }
 
 .col-6 {
   width: 49%;
+}
+p .col-1{
+  margin:0;
+  padding:0;
+}
+.col-2 #nav{
+  margin: 0;
+  padding: 2%;
 }
