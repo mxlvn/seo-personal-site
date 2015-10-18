@@ -4,6 +4,10 @@
 header {
   background-color: black;
   display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
   }
 
 #footer {
@@ -89,6 +93,10 @@ body{
   background-image: -o-linear-gradient(top, #bfbfbf 0%, #dfdfdf 52%, #ffffff 100%);
   background-image: -ms-linear-gradient(top, #bfbfbf 0%, #dfdfdf 52%, #ffffff 100%);
   overflow: scroll;  
+}
+
+#background {
+  margin:53px;
 }
 
 
